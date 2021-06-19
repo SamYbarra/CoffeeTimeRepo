@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.menu_activiy">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Menu_Activiy">
+        <activity android:name=".fragment_seleccionproducto"></activity>
+        <activity android:name=".activity_cara_principal" />
+        <activity
+            android:name=".Menu_Navegation"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Menu_Activiy.NoActionBar" />
+        <activity android:name=".activity_pantalla_iniciando" />
+        <activity android:name=".activity_seguirpantallaallogin" />
+        <activity android:name=".activity_seguirpantalla" />
+        <activity
+            android:name=".ActivityInicial"
+            android:label="@string/title_activity_menu_navegation"
+            android:theme="@style/Theme.Menu_Activiy.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+    </application>
+
+</manifest>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+    android:id="@+id/nav_home"
+    android:name="com.example.menu_activiy.ui.home.HomeFragment"
+    android:label="@string/menu_home"
+    tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_alarm"
+        android:name="com.example.menu_activiy.ui.alarm.AlarmFragment"
+        android:label="@string/menu_alarm"
+        tools:layout="@layout/fragment_alarm" />
+
+
+    <fragment
+        android:id="@+id/nav_market"
+        android:name="com.example.menu_activiy.ui.market.MarketFragment"
+        android:label="@string/menu_market"
+        tools:layout="@layout/fragment_market" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.menu_activiy.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.example.menu_activiy.ui.history.HistoryFragment"
+        android:label="@string/menu_history"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.menu_activiy.ui.logout.LogoutFragment"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/fragment_logout" />
+    <activity
+        android:id="@+id/activity_pantalla_iniciando"
+        android:name="com.example.menu_activiy.activity_pantalla_iniciando"
+        android:label="activity_pantalla_iniciando" />
+</navigation>

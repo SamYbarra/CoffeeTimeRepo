@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/time"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="245dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:src="@drawable/brochetas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMenu1" />
+
+    <TextView
+        android:id="@+id/titleCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/grotesk_medium"
+        android:text="@string/txtMenu9"
+        android:textColor="@color/fontTitle"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleCart3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/grotesk_medium"
+        android:text="@string/priceBrocheta"
+        android:textColor="@color/fontTitle"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtParagraph"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/titleCart4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/grotesk_medium"
+        android:text="1"
+        android:textColor="@color/fontTitle"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/txtParagraph"
+        tools:layout_editor_absoluteX="313dp" />
+
+    <Button
+        android:id="@+id/btnMenu1"
+        android:layout_width="71dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/secondary"
+        android:text="@string/txtDescuento1"
+        android:textAlignment="center"
+        android:textColor="@color/menu1"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:cornerRadius="@android:dimen/app_icon_size"
+        app:iconTint="#781D1D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toEndOf="@+id/titleCart"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="126dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/primary"
+        android:text="@string/txtParagraph2"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/fontTitle"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:cornerRadius="@android:dimen/app_icon_size"
+        app:iconTint="@color/black_overlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/txtParagraph"
+        android:layout_width="323dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/grotesk_medium"
+        android:text="@string/txtParagraph1"
+        android:textAllCaps="false"
+        android:textColor="@color/fontSecondary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMenu" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="46dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:drawableLeft="@drawable/ic_vector"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toEndOf="@+id/titleCart4"
+        app:layout_constraintTop_toBottomOf="@+id/txtParagraph"
+        app:layout_constraintVertical_bias="0.018" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="47dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="36dp"
+        android:drawableLeft="@drawable/ic_eliminar"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/titleCart4"
+        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintStart_toEndOf="@+id/titleCart3"
+        app:layout_constraintTop_toBottomOf="@+id/txtParagraph"
+        app:layout_constraintVertical_bias="0.018" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
